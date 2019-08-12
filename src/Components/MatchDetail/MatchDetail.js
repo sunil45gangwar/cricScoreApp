@@ -35,7 +35,7 @@ class MatchDetail extends Component {
         if (!this.state.loading && this.state.matchDetail) {
             const matchData = this.state.matchDetail;
             matchDetail = (
-                <section style={{background: '#eee'}}>
+                <section style={{background: 'transparent'}}>
                 <div className="container" >
                     <div className="row">
                         <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>

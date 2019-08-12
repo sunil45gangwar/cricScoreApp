@@ -4,6 +4,7 @@ import classes from './Layout.css';
 
 import Toolbar from '../../Components/Navigation/Toolbar/Toolbar';
 import SideDrawer from '../../Components/Navigation/SideDrawer/SideDrawer';
+const backgroundImage = require('../../assets/images/background.jpeg');
 
 class Layout extends Component {
     state = {
@@ -23,6 +24,13 @@ class Layout extends Component {
     render () {
         return (
             <Aux>
+                 <section style={{
+                    width: "100%",
+                    height: "100%",
+                    backgroundImage: `url(${backgroundImage})`,
+                    minHeight: '595px',
+                    opacity: 0.8
+                }}>
                 <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler} />
                 <SideDrawer
                     open={this.state.showSideDrawer}
@@ -30,6 +38,7 @@ class Layout extends Component {
                 <main className={classes.Content}>
                     {this.props.children}
                 </main>
+                </section>
             </Aux>
         )
     }

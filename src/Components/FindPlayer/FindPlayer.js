@@ -70,7 +70,7 @@ class Search extends Component {
         if (!this.state.loading) {
             detail = (
 
-                <section style={{ background: '#eee' }}>
+                <section style={{ background: 'transparent' }}>
                     <div className="container">
                         <div className="coloumn">
                             <div className="row">

@@ -6,7 +6,7 @@ import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 const match = (props) => {
     return (
-        <section style={{background: '#eee'}}>
+        <section style={{background: 'transparent'}}>
         <div className="container">
             <div className="row" >
                 <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
