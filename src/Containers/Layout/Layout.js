@@ -27,9 +27,11 @@ class Layout extends Component {
                  <section style={{
                     width: "100%",
                     height: "100%",
+                    backgroundAttachment : 'fixed',
                     backgroundImage: `url(${backgroundImage})`,
-                    minHeight: '595px',
-                    opacity: 0.8
+                    minHeight: '695px',
+                    opacity: 0.8,
+                    backgroundSize: 'cover'
                 }}>
                 <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler} />
                 <SideDrawer
